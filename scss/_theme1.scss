@@ -1,0 +1,122 @@
+@use './custom'as *;
+
+.theme-1 {
+    background-color: $main-background;
+
+    .calculator {
+
+
+        .header {
+
+            .theme {
+
+                color: $White;
+            }
+
+            .toggle-wrapper {
+
+
+                .switch {
+                    color: $White;
+                }
+
+                .slider {
+                    background-color: $toggle-background;
+
+                    .circle {
+                        background-color: $key-background-toggle;
+                    }
+                }
+
+            }
+
+        }
+
+        .display {
+            background-color: $screen-background;
+
+            .currentNumber {
+                color: $White;
+            }
+
+            .previous-flex {
+
+                .previousNumber {
+                    color: $toggle-background-2;
+                }
+
+                .operation {
+                    color: $toggle-background-2;
+                }
+            }
+
+
+        }
+
+
+        .numberPad {
+            background-color: $screen-background;
+
+            .pad {
+                color: $Very-darkgrayishblue;
+
+                box-shadow: 0px 4px 0px $orange-key-shadow, 0px 8px 20px $screen-background;
+
+                &:active {
+                    box-shadow: none;
+                }
+
+
+            }
+
+            .del {
+                background-color: $key-shadow;
+                color: $White;
+                box-shadow: 0px 4px 0px $key-background, 0px 8px 20px $screen-background;
+
+
+                &:hover {
+                    box-shadow: 0px 4px 0px $key-shadow, 0px 8px 20px $screen-background;
+                }
+
+                &:active {
+                    box-shadow: none;
+                }
+            }
+
+            .reset {
+                background-color: $key-shadow;
+                color: $White;
+                box-shadow: 0px 4px 0px $key-background, 0px 8px 20px $screen-background;
+
+
+                &:hover {
+                    box-shadow: 0px 4px 0px $key-shadow, 0px 8px 20px $screen-background;
+                }
+
+                &:active {
+                    box-shadow: none;
+                }
+            }
+
+            .equals {
+                background-color: $key-shadow-theme1;
+                color: $White;
+
+                box-shadow: 0px 4px 0px $key-background-toggle, 0px 8px 20px $screen-background;
+
+                &:hover {
+                    box-shadow: 0px 4px 0px $key-shadow-theme1, 0px 8px 20px $screen-background;
+                }
+
+                &:active {
+                    box-shadow: none;
+                }
+            }
+        }
+
+    }
+
+
+
+}

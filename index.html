@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="main.js" defer></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <main class="theme-1" id="main">
+
+        <div class="calculator">
+
+            <div class="header">
+                <h1>calc</h1>
+
+                <span class="theme">THEME</span>
+
+                <div class="toggle-wrapper">
+                    <label class="switch">1
+                        <input type="checkbox" id="switch-1">
+                    </label>
+
+
+                    <label class="switch">2
+                        <input type="checkbox" id="switch-2">
+                    </label>
+
+
+                    <label class="switch">3
+                        <input type="checkbox" id="switch-3">
+                    </label>
+
+                    <div class="slider">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="display">
+
+                <div class="previous-flex">
+                    <p class="previousNumber"></p>
+                    <span class="operation"></span>
+                </div>
+
+                <p class="currentNumber"></p>
+            </div>
+
+            <div class="numberPad">
+                <button data-number class="pad">7</button>
+                <button data-number class="pad">8</button>
+                <button data-number class="pad">9</button>
+                <button data-delete class="pad del">DEL</button>
+
+                <button data-number class="pad">4</button>
+                <button data-number class="pad">5</button>
+                <button data-number class="pad">6</button>
+                <button data-operation class="pad add">+</button>
+
+                <button data-number class="pad">1</button>
+                <button data-number class="pad">2</button>
+                <button data-number class="pad">3</button>
+                <button data-operation class="pad subtract">-</button>
+
+                <button data-decimal class="pad">.</button>
+                <button data-number class="pad">0</button>
+                <button data-operation class="pad divide">/</button>
+                <button data-operation class="pad multiply">X</button>
+
+                <button data-reset class="pad reset">RESET</button>
+                <button data-equals class="pad equals">=</button>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>

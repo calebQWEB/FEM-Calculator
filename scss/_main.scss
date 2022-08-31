@@ -1,0 +1,201 @@
+@use './custom'as *;
+
+
+main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: $main-background;
+
+    .calculator {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+
+            h1 {
+                color: $White;
+                font-size: 30px;
+                margin-right: auto;
+            }
+
+            .theme {
+                padding-top: 0.5rem;
+                margin-right: 2rem;
+                font-size: 15px;
+                font-weight: 600;
+                color: $White;
+            }
+
+            .toggle-wrapper {
+                position: relative;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                margin-bottom: 1rem;
+
+                .switch {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.3rem;
+                    align-items: center;
+                    color: $White;
+                    font-weight: 600;
+                    font-size: 13px;
+
+                    input {
+                        opacity: 0;
+                        z-index: 10;
+                    }
+                }
+
+                .slider {
+                    position: absolute;
+                    width: 75px;
+                    height: 20px;
+                    top: 14px;
+                    left: 0;
+                    right: 0;
+                    background-color: $toggle-background;
+                    border-radius: 20px;
+                    transition: .4s;
+
+                    .circle {
+                        position: absolute;
+                        width: 12px;
+                        height: 12px;
+                        border-radius: 50%;
+                        background-color: $key-background-toggle;
+                        top: 4px;
+                        left: 5px;
+                        transition: .4s;
+                    }
+                }
+
+            }
+
+        }
+
+        .display {
+            width: 100%;
+            height: 130px;
+            border-radius: 10px;
+            background-color: $screen-background;
+            margin-bottom: 1.5rem;
+            padding-right: 1.5rem;
+            display: flex;
+            gap: 2rem;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+
+            .currentNumber {
+                font-size: 40px;
+                font-weight: 700;
+                color: $White;
+                word-wrap: break-word;
+                word-break: break-all;
+            }
+
+            .previous-flex {
+                display: flex;
+                gap: 0.5rem;
+
+                .previousNumber {
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: $toggle-background-2;
+                    word-wrap: break-word;
+                    word-break: break-all;
+                }
+
+                .operation {
+                    font-size: 15px;
+                    color: $toggle-background-2;
+                    font-weight: 600;
+                }
+            }
+
+
+        }
+
+
+        .numberPad {
+            background-color: $screen-background;
+            padding: 2rem;
+            border-radius: 10px;
+
+            display: grid;
+            grid-template-columns: repeat(4, 80px);
+            grid-template-rows: repeat(5, 50px);
+            grid-gap: 20px;
+
+            .pad {
+                border-radius: 10px;
+                border: none;
+                font-size: 20px;
+                font-weight: 800;
+                color: $Very-darkgrayishblue;
+                justify-content: center;
+
+                cursor: pointer;
+            }
+
+            .del {
+                background-color: $key-shadow;
+                color: $White;
+
+                &:hover {
+                    background-color: $key-background;
+                }
+            }
+
+            .reset {
+                grid-column: span 2;
+                background-color: $key-shadow;
+                color: $White;
+
+                &:hover {
+                    background-color: $key-background;
+                }
+            }
+
+            .equals {
+                grid-column: span 2;
+                background-color: $key-shadow-theme1;
+                color: $White;
+
+                &:hover {
+                    background-color: $key-background-toggle;
+                }
+            }
+        }
+
+    }
+
+
+
+}
+
+
+
+@media (max-width:480px) {
+
+    main {
+        .calculator {
+
+            .numberPad {
+                grid-template-columns: repeat(4, 50px);
+                grid-template-rows: repeat(5, 40px);
+            }
+    
+        }
+        
+    }
+}
+

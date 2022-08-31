@@ -1,0 +1,128 @@
+@use './custom'as *;
+
+.theme-2 {
+    background-color: $main-background-2;
+
+    .calculator {
+
+        .header {
+
+
+            h1 {
+                color: $Verydarkgrayish-yellow;
+            }
+
+            .theme {
+                color: $Verydarkgrayish-yellow;
+                font-weight: 700;
+            }
+
+            .toggle-wrapper {
+
+
+                .switch {
+                    color: $Verydarkgrayish-yellow;
+
+                }
+
+                .slider {
+                    background-color: $toggle-background-2;
+
+                    .circle {
+                        background-color: $key-background-toggle-1;
+                    }
+                }
+
+            }
+
+        }
+
+        .display {
+            background-color: $screen-background-2;
+            box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+
+            .currentNumber {
+                color: $Verydarkgrayish-yellow;
+            }
+
+            .previous-flex {
+
+
+                .previousNumber {
+                    color: $key-shadow-theme2;
+                }
+
+                .operation {
+                    color: $toggle-background-2;
+                }
+            }
+
+
+        }
+
+
+        .numberPad {
+            background-color: $toggle-background-2;
+            box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+
+            .pad {
+                background-color: $yellow-keybackground-2;
+                color: $Verydarkgrayish-yellow;
+
+                box-shadow: 0px 4px 0px $orange-key-shadow, 0px 8px 20px $toggle-background-2;
+
+                &:active {
+                    box-shadow: none;
+                }
+            }
+
+            .del {
+                background-color: $key-shadow-2;
+                box-shadow: 0px 4px 0px $key-background-2, 0px 8px 20px $toggle-background-2;
+                color: $White;
+
+                &:hover {
+                    background-color: $key-background-2;
+                    box-shadow: 0px 4px 0px $key-shadow-2, 0px 8px 20px $toggle-background-2;
+                }
+
+                &:active {
+                    box-shadow: none;
+                }
+            }
+
+            .reset {
+                background-color: $key-shadow-2;
+                color: $White;
+                box-shadow: 0px 4px 0px $key-background-2, 0px 8px 20px $toggle-background-2;
+
+                &:hover {
+                    background-color: $key-background-2;
+                    box-shadow: 0px 4px 0px $key-shadow-2, 0px 8px 20px $toggle-background-2;
+                }
+
+                &:active {
+                    box-shadow: none;
+                }
+            }
+
+            .equals {
+                background-color: $key-background-toggle-1;
+                color: $White;
+
+                box-shadow: 0px 4px 0px $orange-key-shadow-2, 0px 8px 20px $toggle-background-2;
+
+
+                &:hover {
+                    background-color: $key-background-toggle-1;
+                    box-shadow: 0px 4px 0px $orange-key-shadow-2, 0px 8px 20px $toggle-background-2;
+                }
+
+                &:active {
+                    box-shadow: none;
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "calculator with sass and javascript",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass":"sass --watch scss:assets/css"
+  },
+  "keywords": [
+    "html",
+    "scss",
+    "javascript",
+    "calculator"
+  ],
+  "author": "caleb ochai",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.54.5"
+  }
+}
